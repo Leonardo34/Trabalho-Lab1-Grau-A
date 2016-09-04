@@ -92,7 +92,6 @@ public class Parcela
     }
     
     public void exibeDados (int numeroParcela) {
-        //Adicionar exibição dos dados do cliente
         System.out.println (numeroParcela + " " + cliente.getNome() + " " + DataDeVencimento.obtemDataPadraoComZeros() + " " + ValorOriginal + " " + this.Situacao());
     }
     

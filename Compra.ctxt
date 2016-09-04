@@ -1,10 +1,14 @@
 #BlueJ class context
-comment0.params=
-comment0.target=void\ escolheModalidade()
-comment1.params=compra
-comment1.target=boolean\ ultimasCrescente(double)
+comment0.params=c\ d\ p
+comment0.target=Compra(Cliente,\ Data,\ double)
+comment1.params=c\ d\ m\ a\ p
+comment1.target=Compra(Cliente,\ int,\ int,\ int,\ double)
 comment2.params=
-comment2.target=void\ finalizaCompra()
-comment3.params=d
-comment3.target=Data\ calculaVencimentoData(Data)
-numComments=4
+comment2.target=void\ escolheModalidade()
+comment3.params=compra
+comment3.target=boolean\ ultimasCrescente(double)
+comment4.params=
+comment4.target=void\ finalizaCompra()
+comment5.params=d
+comment5.target=Data\ calculaVencimentoData(Data)
+numComments=6

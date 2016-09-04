@@ -35,13 +35,15 @@ public class Compra
             if (escolha == 1) {
                 modalidade = escolha;
             }
-            if (escolha == 2) {
+            else if (escolha == 2) {
                 modalidade = escolha;
             }
-            if (escolha == 3) {
+            else if (escolha == 3) {
                 modalidade = escolha;
             }
-            // Implementar o controle de erro
+            else {
+                modalidade = 1;
+            }
     }
     
     private boolean ultimasCrescente (double compra) {
