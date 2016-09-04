@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=n\ d
+comment0.target=Cliente(java.lang.String,\ Data)
+comment1.params=ValorCompra
+comment1.target=void\ fazCompra(double)
+comment2.params=valorCompra\ valorTotalDevido
+comment2.target=void\ fazCompra(double,\ double)
+comment3.params=ValorParcela
+comment3.target=void\ pagaParcela(double)
+comment4.params=
+comment4.target=void\ exibeDados()
+comment5.params=
+comment5.target=java.lang.String\ getNome()
+comment6.params=
+comment6.target=double\ getValorUltimaCompra()
+comment7.params=
+comment7.target=double\ getValorPenultimaCompra()
+comment8.params=
+comment8.target=Data\ getData()
+numComments=9
