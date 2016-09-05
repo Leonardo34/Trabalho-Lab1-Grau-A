@@ -16,17 +16,18 @@ public class Cliente
     public Cliente (String n, Data d) {
         nome = n;
         DataNascimento = d;
+        saldoDevedor = 0;
     }
     
     public void fazCompra (double ValorCompra) {
         ValorPenultimaCompra = ValorUltimaCompra;
         ValorUltimaCompra = ValorCompra;
     }
-    
-    public void fazCompra (double valorCompra, double valorTotalDevido) { 
+
+    public void fazCompra (double v, double valorTotalDevido) { 
         // BUG: Recebe Dois valores iguais para valorCompra e valorTotalDevido e chama o metodo sobrecarregado errado
         saldoDevedor = saldoDevedor + valorTotalDevido;
-        this.fazCompra (valorCompra);
+        this.fazCompra (v);
     }
     
     public void pagaParcela (double ValorParcela) {

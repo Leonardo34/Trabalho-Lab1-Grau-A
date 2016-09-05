@@ -21,5 +21,8 @@ public class TestaCompras
         c2 = new Compra (cliente, 21, 8, 2016, 200);
         c2.finalizaCompra();
         c2.exibeDadosCompra();
+        c3 = new Compra(cliente, 13, 6, 2016, 1000);
+        c3.finalizaCompra();
+        c3.exibeDadosCompra();
     }
 }
