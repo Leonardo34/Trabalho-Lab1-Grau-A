@@ -121,5 +121,22 @@ public class Compra
         }
         proxParcela = new Data(28, m, a);
         return proxParcela;
-    }     
+    }
+    
+    public void exibeDadosCompra () {
+        System.out.println("Modalidade: " + modalidade);
+        System.out.println("Cliente: " + cliente.getNome());
+        System.out.println("Data da Compra: " + DataCompra.obtemDataPadrao());
+        System.out.println("Preço Original: " + PrecoOriginal);
+        System.out.println("Preco Final com descontos: " + PrecoFinal);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
