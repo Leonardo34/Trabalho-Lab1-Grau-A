@@ -58,6 +58,7 @@ public class Compra
     public void finalizaCompra () {
         Data d1, d2, d3;
         switch (modalidade) {
+            
             case 1:
                 if (DataCompra.getMes() == cliente.getData().getMes()) {
                     double x;
@@ -80,21 +81,23 @@ public class Compra
                     cliente.fazCompra(PrecoFinal);
                     break;
                 }
+                
             case 2:
-                double x, y;
+                //Corrigido Bug do saldo Devedor
+                double x;
                 x = (PrecoOriginal*3.5)/100;
                 PrecoFinal = PrecoOriginal - x;
+                cliente.fazCompra(PrecoFinal, PrecoFinal);
                 p1 = new Parcela(cliente, DataCompra, PrecoFinal/2);
                 p1.paga(DataCompra);
                 d1 = calculaVencimentoData(DataCompra);
                 p2 = new Parcela (cliente, d1, PrecoFinal/4);
                 d2 = calculaVencimentoData (d1);
                 p3 = new Parcela (cliente, d2, PrecoFinal/4);
-                y = PrecoFinal/2;
-                cliente.fazCompra(PrecoFinal/2, y);
                 break;
+                
             case 3:
-                System.out.println("Compra parcelada em tres vezes sem entrada");
+                //Corrigido Bug do saldo devedor
                 PrecoFinal = PrecoOriginal;
                 d1 = calculaVencimentoData (DataCompra);
                 p1 = new Parcela(cliente, d1, PrecoFinal/3);
@@ -102,7 +105,7 @@ public class Compra
                 p2 = new Parcela(cliente, d2, PrecoFinal/3);
                 d3 = calculaVencimentoData (d2);
                 p3 = new Parcela(cliente, d3, PrecoFinal/3);
-                cliente.fazCompra (0, PrecoFinal);
+                cliente.fazCompra (PrecoFinal, PrecoFinal);
                 break;
             default: 
                 System.out.println ("Debug");
@@ -130,13 +133,4 @@ public class Compra
         System.out.println("Preço Original: " + PrecoOriginal);
         System.out.println("Preco Final com descontos: " + PrecoFinal);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
