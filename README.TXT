@@ -1,7 +1,6 @@
 ﻿----------------------------------------------------------------------------
-Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
-Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
-ele/ela precisa saber. Os comentários devem incluir, pelo menos:
+Trabalho Desenvolvido para a Cadeira de Lab-I, do curso de Ciência da 
+Computação da Universidade UNISINOS
 ------------------------------------------------------------------------
 
 TITULO DO PROJETO: Trab. Grau A Laboratório-I
