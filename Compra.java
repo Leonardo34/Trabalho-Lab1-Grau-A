@@ -67,7 +67,7 @@ public class Compra
                     cliente.fazCompra(PrecoFinal);
                     break;
                 }
-                if (this.ultimasCrescente(PrecoOriginal)) {
+                 if (this.ultimasCrescente(PrecoOriginal)) {
                     double x;
                     x = (PrecoOriginal*8)/100;
                     PrecoFinal = PrecoOriginal - x;
@@ -107,6 +107,7 @@ public class Compra
                 p3 = new Parcela(cliente, d3, PrecoFinal/3);
                 cliente.fazCompra (PrecoFinal, PrecoFinal);
                 break;
+                
             default: 
                 System.out.println ("Debug");
                 break;

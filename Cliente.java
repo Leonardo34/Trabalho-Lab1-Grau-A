@@ -25,7 +25,6 @@ public class Cliente
     }
 
     public void fazCompra (double v, double valorTotalDevido) { 
-        // BUG: Recebe Dois valores iguais para valorCompra e valorTotalDevido e chama o metodo sobrecarregado errado
         saldoDevedor = saldoDevedor + valorTotalDevido;
         this.fazCompra (v);
     }
